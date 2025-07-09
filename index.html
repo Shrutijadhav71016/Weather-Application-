@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Weather App</h1>
+        <p>Get the latest weather updates for your location.</p>
+      </header>
+      <br />
+      <br />
+      <br />
+      <div class="search-section">
+        <input
+          type="text"
+          name="cityInput"
+          id="cityInput"
+          placeholder="Enter the city name(e.g., London, New York) "
+          class="city-input"
+        />
+        <button id="searchbtn" class="search-btn">Search</button>
+    </div>
+        <p class="loading">Loading Weather Data....</p>
+      </div>
+      <div id="error" class="error hidden">
+        <p id="errorMessage"></p>
+      </div>
+
+      <div id="weatherDisplay" class="weather-display hidden">
+
+        <h2 id="cityName"></h2>
+        <div class="weather-Info">
+          <div class="temperature">
+            <span id="temperature"></span>
+            <span class="unit">°C</span>
+          </div>
+          <div class="description">
+            <p id="description"></p>
+          </div>
+        </div>
+
+        <div class="weather-deatails">
+          <div class="detail-item">
+            <span class="label">Feels like:</span>
+            <span id="feelsLike"></span>°C
+          </div>
+
+          <div class="detail-item">
+            <span class="label">Humidity:</span>
+            <span id="humidity"></span>%
+          </div>
+
+            <div class="detail-item">
+                <span class="label">Wind Speed:</span>
+                <span id="windSpeed"></span> m/s
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
